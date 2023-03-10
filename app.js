@@ -7,6 +7,7 @@ let sticky = header.offsetTop;
 
 // get the curcor
 const cursor = document.querySelector('.cursor');
+const innerCursor = document.querySelector('.innerCursor');
 
 
 
@@ -30,11 +31,28 @@ function myFunction() {
 
 // ** EVENT LISTENERS **
 
-document.addEventListener('mousemove', (e) => {
-  let leftPosition = e.pageX +3;
-  let topPosition = e.pageY +3;
+window.addEventListener('mousemove', (e) => {
+  let leftPosition = e.pageX+3 ;
+  let topPosition = e.pageY+3 ;
   cursor.style.left = leftPosition + 'px';
   cursor.style.top = topPosition + 'px';
-}
-)
+  cursor.setAttribute('data-fromTop', (cursor.offsetTop - scrollY))
+})
+window.addEventListener('scroll', () =>
+{
+  const fromTop = parseInt(cursor.getAttribute('data-fromTop'))
+  // let topPosition = scrollY +'3';
+  cursor.style.top = scrollY + fromTop + 'px';
+  console.log(fromTop)
+})
+window.addEventListener('hover', ()=> {
+  if(cursor.classList.contains('active')){
+    cursor.classList.remove('hover')
+    void cursor.offsetWidth;
+    cursor.classList.add('hover')
+  } else{
+    cursor.classList.add('hover')
+  };
+})
+
 window.onscroll = function () { myFunction() };
