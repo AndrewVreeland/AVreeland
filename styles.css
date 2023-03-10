@@ -1,0 +1,126 @@
+.cursor{
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #7EBDC2 ;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+header {
+}
+
+#refresh{
+  color: white;
+  display: flex;
+  margin-top: 60px;
+  width: fit-content;
+  margin-left: 40px;
+  animation: fade-right 2000ms forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+@keyframes fade-right {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#refresh1{
+  color: red;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "League Spartan", sans-serif;
+  font-size: 21px;
+  margin-left: 25px;
+  padding: 4px;
+  z-index: 1;
+  cursor: none;
+}
+a:hover{
+  transform: scale(1.1);
+  transition: 100ms;
+}
+article {
+  display: flex;
+  margin: auto;
+  margin-top: -33px;
+  width: 625px;
+}
+#articleContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: fade-down 2000ms forwards;
+  transform: translateY(-100px);
+  opacity: 0;
+}
+@keyframes fade-down {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+sup {
+  color: white;
+  font-size: 10px;
+  margin-bottom: -3px;
+  z-index: 0;
+}
+
+#imgAndNameContainer {
+  margin-top: 17%;
+  opacity: 0;
+  animation: appear 3000ms forwards;
+}
+@keyframes appear{
+  100% {
+    opacity: 1;
+  }
+}
+
+#imageContainer {
+  background-image: url(images/background1.4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 800px;
+  margin: auto;
+  z-index: 1;
+}
+p {
+  color: white;
+}
+#name {
+  text-align: center;
+  font-size: 100px;
+  transform: scale(1, 1.3);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  font-family: "League Spartan", sans-serif;
+}
+#info {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 27px;
+}
+#headerText {
+  z-index: 0;
+  margin-bottom: -450px;
+  word-spacing: 0.2em;
+}
+body {
+  background-color: #171916;
+  cursor: url('images/custom-cursor-photoaidcom-cropped\ \(1\).jpeg'), auto;
+}
+main{
+  background: rgb(23,25,22);
+  background: linear-gradient(180deg, rgba(23,25,22,1) 43%, rgba(210,173,117,1) 55%, rgba(23,29,20,1) 84%);
+}
