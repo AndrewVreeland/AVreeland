@@ -5,6 +5,7 @@ body {
   background-color: #171916;
   /* cursor: url("images/custom-cursor-photoaidcom-cropped\ \(1\).jpeg"), auto; */
   z-index: 9;
+  zoom: 75%;
 }
 
 .cursor {
@@ -60,7 +61,6 @@ body {
 
 }
 header {
-  zoom: 75%;
 }
 
 #refresh {
