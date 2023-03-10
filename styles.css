@@ -5,7 +5,7 @@ body {
   background-color: #171916;
   /* cursor: url("images/custom-cursor-photoaidcom-cropped\ \(1\).jpeg"), auto; */
   z-index: 9;
-  zoom: 75%;
+  /* transform: scale(.75,.75); */
 }
 
 .cursor {
@@ -66,7 +66,7 @@ header {
 #refresh {
   color: #67A7A1;
   display: flex;
-  margin-top: 60px;
+  margin-top: 30px;
   width: fit-content;
   margin-left: 40px;
   animation: fade-right 2000ms forwards;
@@ -131,7 +131,8 @@ sup {
 }
 
 #imgAndNameContainer {
-  margin-top: 13%;
+  margin-top: 10%;
+  transform: scale(.9,.9);
 }
 
 #imageContainer {
@@ -217,7 +218,8 @@ main {
   margin: 0 auto;
   width: 24px;
   height: 100px;
-  margin-top: 50px;
+  margin-top: -24px;
+  z-index: 5;
 }
 
 .m_scroll_arrows {
@@ -426,9 +428,10 @@ main {
   border: 2px solid grey;
   width: 900px;
   height: 300px;
+  transform: scale(1.2,1.2);
   margin-left: auto;
   margin-right: auto;
-  
+  margin-top: 100px;
 }
 #expertiseTitle{
   display: flex;
@@ -545,13 +548,13 @@ h4{
 }
 #orange{
   height: 9px;
-  width: 205px;
+  width: 201px;
   background-color: #F78702;
-  margin-top: -10px;
+  margin-top: -40px;
   /* margin-right: -80px; */
   /* margin-left: 14px; */
 }
-#lightPink{
+/* #lightPink{
   height: 33px;
   width: 25px;
   background-color: lightpink;
@@ -559,7 +562,7 @@ h4{
   margin-top: -63px;
   margin-left: 1px;
 
-}
+} */
 #container{
   padding-bottom: 500px;
 }
@@ -577,8 +580,9 @@ h4{
 }
 
 #backgroundCode{
-  margin-left: 650px;
+  margin-left: 580px;
   margin-right: auto;
-  margin-top: -40px;
+  margin-top: -65px;
   opacity: 50%;
+  transform: scale(.75,.7);
 }
