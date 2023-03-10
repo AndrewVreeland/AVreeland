@@ -449,11 +449,29 @@ main {
   width: 300px;
 }
 
+#fullstack{
+  width: 210px ;
+  margin-top: -20px;
+  /* margin-left: -50px; */
+}
+#react{
+  height: 45px;
+  margin-left: 10px;
+  margin-right: -10px;
+  margin-top: -20px;
+}
+#reactContainer{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
 h2{
   font-size: 80px;
   color: #fff;
   font-family: "League Spartan", sans-serif;
-  
+  font-weight: bold;
+  transform: scale(1.1,1);
 }
 h4{
   font-size: 30px;
@@ -465,13 +483,34 @@ h4{
   font-weight: bold;
 }
 #software{
-  width: min-content;
-  margin-left: 70px;
+  width: fit-content;
+  margin-left: -45px;
 }
 
-#fullstack{
-  /* width: 230px ; */
-  margin-top: -20px;
+#softwareContainer{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+#computer{
+  width: 50px;
+  height: 50px;
+  margin-right: -5px;
+  margin-left: 5px;
+}
+#devContainer{
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+#dev{
+  width: 200px;
+  margin-left: -10px;
+}
+#arrow{
+  height: 50px;
+  width: 70px;
+  margin-left: -10px;
 }
 
 #expertiseText{
@@ -492,24 +531,24 @@ h4{
   width: 120px;
   background-color: #FF00FF;
   margin-top: -40px;
-  margin-right: -80px;
-  margin-left: 25px;
+  
+  margin-left: 85px;
 }
 #purple{
   height: 9px;
-  width: 260px;
+  width: 170px;
   background-color: #2a52be;
-  margin-top: -40px;
-  margin-right: -70px;
-  margin-left: 16px;
+  margin-top: -70px;
+  
+  margin-left: 19px;
 }
 #orange{
   height: 9px;
-  width: 265px;
+  width: 205px;
   background-color: #F78702;
   margin-top: -17px;
-  margin-right: -80px;
-  margin-left: 14px;
+  /* margin-right: -80px; */
+  /* margin-left: 14px; */
 }
 #lightPink{
   height: 35px;
@@ -517,6 +556,6 @@ h4{
   background-color: lightpink;
   z-index: 0;
   margin-top: -60px;
-  margin-left: 16px;
+  margin-left: 1px;
 
 }
