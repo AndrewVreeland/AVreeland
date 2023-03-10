@@ -511,6 +511,7 @@ h4{
   height: 50px;
   width: 70px;
   margin-left: -10px;
+  margin-top: -10px;
 }
 
 #expertiseText{
@@ -551,11 +552,33 @@ h4{
   /* margin-left: 14px; */
 }
 #lightPink{
-  height: 35px;
+  height: 31px;
   width: 25px;
   background-color: lightpink;
   z-index: 0;
-  margin-top: -60px;
+  margin-top: -63px;
   margin-left: 1px;
 
+}
+#container{
+  padding-bottom: 500px;
+}
+#expertiseTextContainer{
+  border-left: 2px solid grey ;
+  width: 55px;
+  margin-left: 80px;
+}
+
+#sup{
+  margin-left: 75px;
+  color: grey;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#backgroundCode{
+  margin-left: 650px;
+  margin-right: auto;
+  margin-top: -40px;
+  opacity: 50%;
 }
