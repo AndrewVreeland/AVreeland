@@ -41,7 +41,7 @@ window.addEventListener('mousemove', (e) => {
 window.addEventListener('scroll', () =>
 {
   const fromTop = parseInt(cursor.getAttribute('data-fromTop'))
-  // let topPosition = scrollY +'3';
+  let topPosition = scrollY +'3';
   cursor.style.top = scrollY + fromTop + 'px';
   console.log(fromTop)
 })
